@@ -1,4 +1,4 @@
-### Burger App
+### Birthday-Reminder
 
 birthday-remainder is a simple and little application.
 
