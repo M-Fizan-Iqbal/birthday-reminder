@@ -1,9 +1,7 @@
 import React from "react";
-import { useState } from "react";
-import data from "./data";
 import { Box, Image, Badge, Container } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
-import "./App.css";
+import "../App/App.css";
 
 const List = () => {
   const property = {

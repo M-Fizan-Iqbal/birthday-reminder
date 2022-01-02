@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import data from "./data";
 import { Box, Image, Container, Heading, Button } from "@chakra-ui/react";
 
-const DataList = () => {
+const BirthdayList = () => {
   const [list, setList] = useState(data);
   return (
     <Box
@@ -25,7 +25,7 @@ const DataList = () => {
       {/* <VStack> */}
       <Container maxW="container.lg" ml="15">
         <Heading as="h3" size="lg">
-          {list.length} Birthdays Today
+          {list.length} Most Important Personalities Birthday's
         </Heading>
         {list.map((item) => (
           <Box display="grid" gridTemplateColumns="auto 1fr">
@@ -39,7 +39,7 @@ const DataList = () => {
               mb="15"
             />
             <h4>{item.name}</h4>
-            <p>{item.age} Years Old</p>
+            <p>Birthday on {item.age} </p>
           </Box>
         ))}
         <Button
@@ -60,4 +60,4 @@ const DataList = () => {
   );
 };
 
-export default DataList;
+export default BirthdayList;
